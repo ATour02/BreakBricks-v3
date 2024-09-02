@@ -8,14 +8,14 @@ export class WallBrick extends Phaser.GameObjects.Group {
   }
 
   createWall() {
-    for (let i = 0; i < 10; i++) {
-      for (let j = 0; j < 6; j++) {
+    for (let i = 0; i < 1; i++) { // 10
+      for (let j = 0; j < 1; j++) { //6
         let brick = new Brick(
           this.scene,
-          40 + i * 70,
-          40 + j * 30,
-          60,
-          20,
+          300 + i * 70,
+          200 + j * 30,
+          600,
+          200,
           0xffffff,
           1
         );
@@ -23,4 +23,6 @@ export class WallBrick extends Phaser.GameObjects.Group {
       }
     }
   }
+
+
 }
